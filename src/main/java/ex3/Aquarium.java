@@ -5,7 +5,7 @@ import java.util.List;
 public class Aquarium {
 
 	private List<String> animaux;
-	private final double kilosNourriture =0.2;
+	private final double KILOSNOURRITURE =0.2;
 	
 	public void addAnimal(String typeAnimal, String nomAnimal, String comportement) {
 		animaux.add(typeAnimal);
@@ -20,6 +20,6 @@ public class Aquarium {
 	}
 	
 	public double calculerKgsNourritureParJour(){
-		return animaux.size() * kilosNourriture;
+		return animaux.size() * KILOSNOURRITURE;
 	}
 }
