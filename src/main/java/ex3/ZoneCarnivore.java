@@ -4,23 +4,22 @@ import java.util.List;
 
 public class ZoneCarnivore {
 
-	private List<String> types;
-	private List<String> noms;
-	private List<String> comportements;
+	private List<String> carnivores;
+	public final int KILOSNOURRITURE=10;
 	
 	public void addAnimal(String typeAnimal, String nomAnimal, String comportement) {
-		types.add(typeAnimal);
-		noms.add(nomAnimal);
-		comportements.add(comportement);
+		carnivores.add(typeAnimal);
+		carnivores.add(nomAnimal);
+		carnivores.add(comportement);
 	}
 	
 	public void afficherListeAnimaux(){
-		for (String nom: noms){
+		for (String nom: carnivores){
 			System.out.println(nom);
 		}
 	}
 	
 	public double calculerKgsNourritureParJour(){
-		return noms.size() * 10;
+		return carnivores.size() * KILOSNOURRITURE;
 	}
 }
