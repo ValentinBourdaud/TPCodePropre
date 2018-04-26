@@ -12,6 +12,15 @@ public class Customer {
 		this.wallet = wallet;
 	}
 
+	public double makePayment(double amount) {
+		if (wallet.getMoney() >= amount) {
+			wallet.setMoney(wallet.getMoney() - amount);
+			return amount;
+		}
+
+		return 0.0;
+	}
+
 	/**
 	 * Getter for wallet
 	 * 
