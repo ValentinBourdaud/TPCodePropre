@@ -6,11 +6,11 @@ public class ZooApplication {
 		Zoo zoo = new Zoo("Thoiry");
 		
 		zoo.addAnimal("Gazelle", "MAMMIFERE", "HERBIVORE");
-		zoo.addAnimal("Zèbre", "MAMIFERE", "HERBIVORE");
+		zoo.addAnimal("Zebre", "MAMIFERE", "HERBIVORE");
 		zoo.addAnimal("Lion", "MAMMIFERE", "HERBIVORE");
-		zoo.addAnimal("Panthère", "MAMMIFERE", "CARNIVORE");
+		zoo.addAnimal("Panthere", "MAMMIFERE", "CARNIVORE");
 		zoo.addAnimal("Requin blanc", "POISSON", "HERBIVORE");
-		zoo.addAnimal("Truite dorée", "POISSON", "HERBIVORE");
+		zoo.addAnimal("Truite doree", "POISSON", "HERBIVORE");
 		zoo.addAnimal("Boa constrictor", "SERPENT", "CARNIVORE");
 		zoo.addAnimal("Python", "SERPENT", "CARNIVORE");
 	}
